@@ -18,6 +18,7 @@
     --footer-background-color:#2E2F42;
     --secondary-accent-color:#404BBF;
     --list-gap:24px;
+    --custom-border-first:#8E8F99;
 }
 p,
 h1,
@@ -160,6 +161,10 @@ body{
     padding-bottom: 188px;
     text-align: center;
     background-color: var(--footer-background-color);    
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -199,7 +204,8 @@ body{
     padding-bottom: 120px;
 }
 .feature{
-    display: flex; 
+    display: flex;
+    width: calc((100%-24px)/4);
     gap: 24px;
 }
 
@@ -208,7 +214,15 @@ body{
     
 }
 
-
+.feature-picture-link{
+    
+}
+.feature-picture{
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background: var(--secondary-backgrountd-color);
+    border-radius: 4px;
+}
 /*   -------  WORKS   -------   */
 
 .section-works{
@@ -239,6 +253,8 @@ body{
 .item-team{
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     text-align: center;
 }
 .teams-subject{
@@ -250,7 +266,76 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    margin-bottom: 8px;
 }
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-soc-item {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-accent-color);
+}
+.team-soc-link:is(:hover, :focus){
+background: var(--secondary-accent-color); 
+}
+.team-soc-icon{
+    fill: rgba(244, 244, 253, 1);
+}
+
+/*   ------- CUSTOMERS --------  */
+
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+
+.customers-logo-item {
+    width: calc((100%-120px)/6);
+    height: 88px;    
+}
+
+.customers-logo-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--custom-border-first);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--custom-border-first);
+}
+
+.customers-logo-icon {
+    fill: currentColor;
+}
+
+.customers-logo-link:hover, 
+.customers-logo-link:focus{
+    border-color: var(--secondary-accent-color);
+    color: var(--secondary-accent-color);
+}
+
+
 
 /*   -------  FOOTER   -------   */
 footer{
