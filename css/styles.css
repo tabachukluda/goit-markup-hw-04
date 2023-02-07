@@ -329,10 +329,9 @@ background: var(--secondary-accent-color);
     fill: currentColor;
 }
 
-.customers-logo-link:hover, 
-.customers-logo-link:focus{
+.customers-logo-link:is(:hover, :focus) {
     border-color: var(--secondary-accent-color);
-    color: var(--secondary-accent-color);
+    fill: var(--secondary-accent-color);
 }
 
 
