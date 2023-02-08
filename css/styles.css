@@ -157,6 +157,8 @@ body{
 }
 
 .hero{    
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -337,17 +339,14 @@ background: var(--secondary-accent-color);
 
 
 /*   -------  FOOTER   -------   */
-footer{
+footer{ 
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--footer-background-color);    
 }
-.logo-footer{
-    width: 264px;
-    margin-right: 120px;
-}
+
 .footer-logo{    
     font-family:'Raleway', sans-serif;
     font-weight: 800;
@@ -361,10 +360,10 @@ footer{
 .footer-text{
     width: 264px;
     margin-top: 16px;
-    color: var(--white-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--white-color);
 }
 
 .visually-hidden {
@@ -379,25 +378,17 @@ footer{
     clip-path: inset(50%);
     margin: -1px;
 }
-
-.footer-container {    
-    display: flex;
-    align-items: center;
-    margin-left: 120px;
-}
-
 .footer-text-soc {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     color: var(--white-color);
     margin-bottom: 16px;
 }
 
 .footer-soc-list {
-    display: flex;
+    display: flex;    
     gap: 16px;
 }
 
@@ -414,14 +405,18 @@ footer{
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
-    }
 }
-
 
 .footer-soc-icon {
-    padding: 6px 12px;
+    fill: rgba(244, 244, 253, 1);
+}
+.footer-container{
+    display: flex;
 }
 
+.soc-footer{
+    margin-left: 120px;
+}
 /* Portfolio*/
 
 .portfolio{
@@ -475,7 +470,7 @@ footer{
     border-bottom: 1px solid var(--footer-text-color);
     }
 
-.gallery-it:is(:hover, :focus){
+.item-shadow:is(:hover, :focus){
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
     
