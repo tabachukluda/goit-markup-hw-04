@@ -210,11 +210,11 @@ body{
     display: flex;
     width: calc((100%-24px)/4);
     gap: 24px;
+    
 }
 
 .feature-list {
     margin-bottom: 8px;
-
 }
 
 
@@ -342,9 +342,9 @@ background: var(--secondary-accent-color);
 /*   -------  FOOTER   -------   */
 footer{ 
     display: flex;
-    align-items: baseline;
     padding-top: 100px;
     padding-bottom: 100px;
+    align-items: baseline;
     background-color: var(--footer-background-color);    
 }
 
@@ -357,7 +357,9 @@ footer{
     color: var(--white-color);
 }
 
-
+.footer{
+    
+}
 .footer-text{
     width: 264px;
     margin-top: 16px;
@@ -418,6 +420,11 @@ footer{
 }
 .footer-container{
     display: flex;
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .soc-footer{
