@@ -208,7 +208,8 @@ body{
 
 .feature {
     display: flex;
-    width: calc((100%-24px)/4);
+    justify-content: center;
+    
     gap: 24px;
     
 }
@@ -218,12 +219,16 @@ body{
 }
 
 
-.feature-picture {
-    padding: 24px 100px;
+.feature-picture { 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 112px;
     margin-bottom: 8px;
     background: var(--secondary-backgrountd-color);
     border-radius: 4px;
 }
+
 
 
 /*   -------  WORKS   -------   */
@@ -410,10 +415,9 @@ footer{
     background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-soc-item:is(:hover,:focus){
+.footer-soc-link:is(:hover,:focus){
     background: #31D0AA;
-    border-radius: 50%;
-}
+   }
 
 .footer-soc-icon {
     fill: rgba(244, 244, 253, 1);
