@@ -477,7 +477,7 @@ footer{
     column-gap: 24px;
 }
 
-.gallery-item{  
+.gallery-item {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -485,17 +485,23 @@ footer{
     border-left: 1px solid var(--footer-text-color);
     border-right: 1px solid var(--footer-text-color);
     border-bottom: 1px solid var(--footer-text-color);
-    }
-
-.item:is(:hover, :focus){
-    box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-    
+
 .gallery-subject{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
     margin-bottom: 8px;
-    
+    color: var(--primary-text-color);
 }
 
 .logo-link{
     text-decoration: none;
+}
+.gallery-card{
+    display: block; 
+    text-decoration: none;   
+}
+.gallery-card:is(:hover,:focus){
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
